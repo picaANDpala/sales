@@ -7,8 +7,13 @@ public class Main {
 			Sales sales1 = new Sales("ciccio");
 			Sales sales2 = new Sales("pasticcio");
 			
-			sales.print();
-			sales1.print();
-			sales2.print();
+			Sales team[] = new Sales[3];
+			team[0] = sales;
+			team[1] = sales1;
+			team[2] = sales2;
+			
+			for(Sales s : team){
+				s.print();
+			}
 		}
 }
